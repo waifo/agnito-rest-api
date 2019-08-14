@@ -8,7 +8,7 @@ const app = require('./config/app');
 //DB Setup
 
 //for local without authentication
-const uri = 'mongodb://localhost:27017/Agnito';
+// const uri = 'mongodb://localhost:27017/Agnito';
 
 //for local with authentication
 //const uri = 'mongodb://Agnito:Agnito123@localhost:27017/Agnito';
@@ -16,6 +16,8 @@ const uri = 'mongodb://localhost:27017/Agnito';
 //for mlab with authentication
 // const uri = 'mongodb://admin:'+encodeURIComponent("Agnito0@agnito")+'@ds239071.mlab.com:39071/agnito';
 
+//for mongodb atlas
+const uri = 'mongodb+srv://mukesh-dev:mukeshdev@test-cluster-jw10d.mongodb.net/test?retryWrites=true&w=majority'
 const options = {
     useNewUrlParser: true,
     useCreateIndex: true,
