@@ -21,7 +21,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(cookieParser());
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin:"http://localhost:3090",
+}))
 app.use('/api',routes);
 
 //enable api logging in dev env
